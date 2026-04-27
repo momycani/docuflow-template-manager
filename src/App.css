@@ -230,3 +230,14 @@ code {
   background: #fee2e2;
   color: #991b1b;
 }
+
+.step-list {
+  margin: 16px 0 0;
+  padding-left: 20px;
+  color: #4b5563;
+}
+
+.step-list li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
