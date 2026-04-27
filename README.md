@@ -1,71 +1,54 @@
-# React + TypeScript + Vite
+# DocuFlow Template Manager
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React + TypeScript workflow dashboard that simulates the end-to-end lifecycle of insurance document templates, including policies, quotes, binders, endorsements, and notices.
 
-Currently, two official plugins are available:
+Built for document support engineering workflows involving schema-driven templates, JSON field mapping, QA validation, Jira-style request triage, rollout tracking, and debugging runbooks.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Live Demo
 
-## React Compiler
+Coming soon
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
 
-## Expanding the ESLint configuration
+- React
+- TypeScript
+- Vite
+- React Router
+- CSS
+- Mock JSON-style data
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Features
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- Document template library
+- Schema field mapping view
+- QA test plan tracking
+- Jira-style document request queue
+- Template debugging runbook
+- Dashboard summary metrics
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Role Alignment
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+This project demonstrates hands-on understanding of:
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- Document template lifecycle management
+- Structured data mapping into customer-facing documents
+- Debugging missing fields, formatting issues, and logic bugs
+- QA testing and regression prevention
+- Request triage and stakeholder communication
+- Process documentation and runbook creation
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Pages
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
+- Dashboard
+- Templates
+- Schema Mapping
+- Test Plans
+- Request Queue
+- Runbook
+
+## Project Purpose
+
+DocuFlow Template Manager was built to demonstrate technical support, document operations, QA workflow, and project coordination skills for document support engineering and implementation-focused roles.
       // other options...
     },
   },
